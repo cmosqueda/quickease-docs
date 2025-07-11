@@ -3,21 +3,58 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroBanner {
+  padding: 4rem 0;
+  text-align: start;
+  position: relative;
+  overflow: hidden;
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+}
+
+/* for centering banner content */
+.bannerAlign {
+  align-items: center;
+}
+
+/* for setting mascot div height */
+.mascotDivHeight {
+  /* height: 300px; */
+  margin-top: 0px;
+}
+
+/* for animating mascot */
+.mascotAnimate {
+  /* height: 300px; */
+  animation: float 3s ease-in-out infinite;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+    text-align: center;
+  }
+  .buttons {
+    justify-content: center;
+  }
+  .mascotDivHeight {
+    /* height: 300px; */
+    margin-top: 30px;
+  }
 }

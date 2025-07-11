@@ -49,9 +49,9 @@ Database: Uses PostgreSQL for structured data such as user profiles, quiz result
 
 QuickEase 2.0 uses a unified TypeScript/Node.js stack across web, mobile, and backend, enabling code reusability and performance consistency. The backend is hosted on DigitalOcean, and core services are integrated within the Google Cloud ecosystem for scalability and reliability.
 
-### Frontend Stacks (Web)
+### Frontend Dependencies (Web)
 
-#### Production Dependencies
+#### For Production
 
 | Package               | Description                                                                                       |
 | --------------------- | ------------------------------------------------------------------------------------------------- |
@@ -76,7 +76,7 @@ QuickEase 2.0 uses a unified TypeScript/Node.js stack across web, mobile, and ba
 | tailwind-merge        | Merges Tailwind classes intelligently to avoid conflicts.                                         |
 | zod                   | Used for runtime schema validation, ensuring that data meets expected types and shapes.           |
 
-#### Development Dependencies
+#### For Development
 
 | Package                        | Description                                                                                       |
 | ------------------------------ | ------------------------------------------------------------------------------------------------- |
@@ -92,9 +92,9 @@ QuickEase 2.0 uses a unified TypeScript/Node.js stack across web, mobile, and ba
 | typescript-eslint              | Integrates TypeScript with ESLint for better linting support on TypeScript codes.                 |
 | globals                        | Provides a list of global variables as used in different JS environments (Node, browser, etc.).   |
 
-### Backend Stacks
+### Backend Dependencies
 
-#### Production Dependencies
+#### For Production
 
 | Package                                                                                           | Description                                                                                                            |
 | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -109,7 +109,7 @@ QuickEase 2.0 uses a unified TypeScript/Node.js stack across web, mobile, and ba
 | zod                                                                                               | Runtime validation and parsing library.                                                                                |
 | zod-to-json-schema                                                                                | Converts Zod schemas to JSON Schema (used for API validation or OpenAPI specs).                                        |
 
-#### Development Dependencies
+#### For Development
 
 | Package                                 | Description                                                                                               |
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------- |

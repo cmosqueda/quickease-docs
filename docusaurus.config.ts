@@ -73,6 +73,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "QuickEase 2.0",
@@ -99,19 +104,20 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
-        {
-          title: "QuickEase 2.0",
-          items: [
-            {
-              label: "Docs",
-              to: "/docs/intro",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/dlord213/quickease-2.0.git",
-            },
-          ],
-        },
+        // disabled, no use case yet. will be updated soon.
+        // {
+        //   title: "QuickEase 2.0",
+        //   items: [
+        //     {
+        //       label: "Docs",
+        //       to: "/docs/intro",
+        //     },
+        //     {
+        //       label: "GitHub",
+        //       href: "https://github.com/dlord213/quickease-2.0.git",
+        //     },
+        //   ],
+        // },
         // disabled community below, don't have a use case for it yet
         // {
         //   title: "Community",
@@ -130,7 +136,6 @@ const config: Config = {
         //     },
         //   ],
         // },
-
         // disabled more below, don't have a use case for it yet
         // {
         //   title: "More",
